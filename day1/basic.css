@@ -1,0 +1,39 @@
+/* introduction to css */
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  color: teal;
+  font-family: consolas, sans-serif;
+  font-size: 20px;
+  margin-left: 40px;
+
+  /* clockwise */
+  padding: 20px 10px 20px 10px;
+}
+
+h1 {
+  color: blue;
+  font-size: 30px;
+}
+
+h2 {
+  color: turquoise;
+  font-size: 30px;
+}
+
+/* class selector */
+.para {
+  color: purple;
+}
+
+.myParam {
+  font-size: 36px;
+}
+
+/* id selector */
+#myHeader {
+  color: pink;
+  font-size: 48px;
+}
