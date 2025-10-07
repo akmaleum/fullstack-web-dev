@@ -29,15 +29,14 @@
   text-align: center;
 }
 
-.container-cat{
+.container-cat {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
 }
 
-.container-cat div{
-    display: grid;
-    padding: 3px;
-    margin: 10px;
-    text-align: center;
+.container-cat div {
+  padding: 3px;
+  margin: 10px;
+  text-align: center;
 }
