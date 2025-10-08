@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic JavaScript</title>
+  </head>
+  <body>
+    <!-- <button onclick="console.log(40)">Click Me</button>
+    <script>
+      console.log(40);
+    </script> -->
+    <h1 style="font-family: Inter Display" >This is a Heading</h1>
+    <h2 id="myHeading" style="font-family: Inter Display">Heading 2 sample</h2>
+    <script src="function.js"></script>
+    <script>
+      let heading = document.getElementsByTagName("h1");
+      console.log(heading);
+      heading[0].innerHTML = "iPhone 17 Pro Max";
+
+      let heading2 = document.getElementById("myHeading");
+      console.log(heading2);
+      heading2.innerHTML = "iPhone 16 Pro";
+    </script>
+  </body>
+</html>
