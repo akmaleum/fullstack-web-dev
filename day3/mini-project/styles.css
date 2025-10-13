@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* background-color: #232323; */
+}
+
+.container {
+  /* color: #ffffff; */
+  width: 400px;
+  margin-top: 60px;
+  font-family: Inter, sans-serif;
+  padding: 20px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+.container h2 {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 7px;
+}
+
+button {
+  background-color: #007bff; /* normal (enabled) button background */
+  color: #ffffff; /* normal button text color */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  display: block;
+  width: auto; /* don't stretch full width */
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+  float: right; /* align to the right */
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #dcdcdc; /* greyed out when disabled */
+  color: #8a8a8a;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+/* clearfix so floated button doesn't collapse container */
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
