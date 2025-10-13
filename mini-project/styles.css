@@ -8,7 +8,7 @@
 }
 .container h2 {
   font-weight: 700;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
 
 input {
@@ -19,18 +19,18 @@ input {
   border-radius: 7px;
 }
 
-button{
-    /* background-color: #000000; */
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.9;
-    /* text-align: right; */
+button {
+  /* background-color: #000000; */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.9;
+  /* text-align: right; */
 }
 
 button:disabled {
