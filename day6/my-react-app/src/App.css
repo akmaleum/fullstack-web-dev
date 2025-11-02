@@ -41,3 +41,121 @@
 .read-the-docs {
   color: #888;
 }
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+  align-items: center;
+  justify-content: flex-start; /* start from top instead of center */
+  background-color: #111827;
+  color: white;
+  padding: 2rem;
+}
+
+.form-card {
+  width: 100%; /* take full width */
+  max-width: none; /* remove the 500px limit */
+  height: auto;
+  padding: 2rem;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  border: 1px solid #4b5563;
+  background-color: #374151;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-family: inherit;
+  text-align: center;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  /* ring: 2px;
+  ring-color: #3b82f6; */
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.submit-button:hover {
+  background-color: #1d4ed8;
+}
+
+.summary-card {
+  margin-top: 2rem;
+  background-color: #374151;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+}
+
+.summary-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.summary-item {
+  margin-bottom: 0.5rem;
+}
+
+/* Make the form fill the full screen width */
+.full-screen {
+  display: block;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #111827;
+}
+
+/* Remove centering limits */
+.full-width {
+  max-width: none !important;
+  width: 100% !important;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}

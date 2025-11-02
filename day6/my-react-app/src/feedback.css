@@ -1,0 +1,135 @@
+/* feedback.css - full-width enforced */
+:root, html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* root container for this form (full viewport) */
+.ff-root {
+  min-height: 100vh !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  justify-content: center !important;
+  gap: 2rem;
+  background: linear-gradient(180deg, #071026 0%, #0f1724 100%);
+  padding: 2rem !important;
+  box-sizing: border-box;
+}
+
+/* left column: form (take more space) */
+.ff-left {
+  flex: 2 1 700px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(31, 41, 55, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+}
+
+/* right column: summary (narrow) */
+.ff-right {
+  flex: 1 1 300px;
+  max-width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* If you want the summary stacked under form on small screens */
+@media (max-width: 900px) {
+  .ff-root {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+  .ff-right {
+    max-width: none;
+  }
+}
+
+/* basic form styles */
+.ff-title {
+  margin: 0 0 1.25rem 0;
+  font-size: 2.25rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.ff-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ff-label {
+  color: #e5e7eb;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  text-align: left;
+}
+
+/* inputs stretch full width inside left container */
+.ff-input,
+.ff-textarea {
+  width: 100% !important;
+  min-width: 0;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(148,163,184,0.12);
+  background: rgba(99, 102, 110, 0.25);
+  color: #e6eef9;
+  box-sizing: border-box;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+/* focus */
+.ff-input:focus,
+.ff-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.8);
+}
+
+/* submit */
+.ff-button {
+  margin-top: 0.25rem;
+  background: linear-gradient(90deg,#2563eb,#1d4ed8);
+  color: white;
+  border: none;
+  padding: 0.85rem 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.05rem;
+}
+
+.ff-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(13, 76, 252, 0.18);
+  transition: all 160ms ease;
+}
+
+/* summary box */
+.ff-summary {
+  width: 100%;
+  background: rgba(31, 41, 55, 0.85);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #e6eef9;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.45);
+}
+
+.ff-summary h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
